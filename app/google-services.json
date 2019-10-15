@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "905910187084",
+    "firebase_url": "https://mayda-254116.firebaseio.com",
+    "project_id": "mayda-254116",
+    "storage_bucket": "mayda-254116.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905910187084:android:f91b7a92562cb34f1930e9",
+        "android_client_info": {
+          "package_name": "salhi.boubrit.mayda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905910187084-g1frq17o4ilt004vk6g11ir1io6a497q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "salhi.boubrit.mayda",
+            "certificate_hash": "2d92a438af7af0701dae9f0f3abadcd289763bdc"
+          }
+        },
+        {
+          "client_id": "905910187084-6s57of0avfbbeubgc1c7eja5ks6c2nu4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTUuzYPdQRdUS8X4V4mQWVRWhu1a5LoW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905910187084-6s57of0avfbbeubgc1c7eja5ks6c2nu4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
