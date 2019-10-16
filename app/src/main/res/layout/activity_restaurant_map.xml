@@ -2,7 +2,8 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".RestaurantMapActivity">
+    tools:context=".RestaurantMapActivity"
+    android:padding="2dp">
 
 <fragment
     android:id="@+id/map"
@@ -10,11 +11,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     />
-<Button
-    android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="3dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ret_btn"
+            android:layout_width="50dp"
+
+            android:layout_height="match_parent"
+            android:background="@android:drawable/ic_menu_revert"
+            android:text="Back" />
+
+        <EditText
+            android:id="@+id/location_search"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_default"
+            android:shadowRadius="13"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:shadowColor="#ffffff"
+            android:inputType="textPostalAddress"
+            android:hint="location" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="Back"
-    android:id="@+id/ret_btn"/>
+    android:id="@+id/relatif"
+    android:orientation="horizontal"
+    >
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_gps"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="365dp"
+        android:id="@+id/gps_btn"
+        />
+</LinearLayout>
 
 
 </FrameLayout>

@@ -5,9 +5,12 @@ import androidx.fragment.app.FragmentActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -19,8 +22,9 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class RestaurantMapActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    private Button retour_btn;
-
+    private ImageButton retour_btn;
+    private ImageView gps_view;
+    private static final String TAG = "RestaurantMapActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,14 +34,21 @@ public class RestaurantMapActivity extends FragmentActivity implements OnMapRead
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        retour_btn = (Button)findViewById(R.id.ret_btn);
-
+        retour_btn = (ImageButton)findViewById(R.id.ret_btn);
+        gps_view = (ImageView)findViewById(R.id.gps_btn);
        // getActionBar().setDisplayHomeAsUpEnabled(true);
        // getActionBar().setDisplayShowHomeEnabled(true);
         retour_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 retour();
+            }
+        });
+
+        gps_view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d(TAG, "onClick: ");
             }
         });
     }
