@@ -3,4 +3,5 @@
     <string name="btn_client">Looking for Restaurants</string>
     <string name="btn_restaurant">I own a restaurant</string>
     <string name="title_activity_restaurant_maps">Map</string>
+    <string name="title_activity_restaurant_map">Map</string>
 </resources>

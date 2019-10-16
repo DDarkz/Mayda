@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         client_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, RestaurantMapsActivity.class);
+                Intent intent = new Intent(MainActivity.this, RestaurantMapActivity.class);
                 startActivity(intent);
                 finish();
                 return;
