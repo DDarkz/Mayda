@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="3dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="13dp"
         android:layout_marginRight="3dp"
         android:orientation="horizontal">
 
@@ -30,8 +30,8 @@
 
         <EditText
             android:id="@+id/location_search"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_width="280dp"
+            android:layout_height="39dp"
             android:layout_gravity="center"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
