@@ -27,7 +27,7 @@
     \"elementType\": \"geometry\",
     \"stylers\": [
       {
-        \"color\": \"#ffebd7\"
+        \"color\": \"#f5f6fa\"
       }
     ]
   },
@@ -95,4 +95,9 @@
   }
 ]
     </string>
+
+    <string name="service_not_available">service non disponible reesayez plutard</string>
+    <string name="adress_found">adress trouvé wow</string>
+    <string name="no_geocoder_available">"aucun geocoder disponible"</string>
+    <string name="description_icone_menu">menu de la carte</string>
 </resources>

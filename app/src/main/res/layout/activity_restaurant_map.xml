@@ -1,4 +1,5 @@
-<FrameLayout android:layout_width="match_parent"
+<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -12,20 +13,42 @@
     android:layout_height="match_parent"
     />
 
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="expand the zone"-->
+<!--        android:layout_gravity="right"-->
+<!--        android:id="@+id/expansion"/>-->
+
+    <ImageButton
+        android:id="@+id/menu_carte"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_menu"
+        android:scaleType="fitXY"
+        android:layout_marginTop="12dp"
+        android:background="#99ffffff"
+        android:layout_margin="8dp"
+        android:contentDescription="@string/description_icone_menu"
+         />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="65dp"
         android:layout_marginLeft="3dp"
-        android:layout_marginTop="13dp"
         android:layout_marginRight="3dp"
         android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/ret_btn"
-            android:layout_width="50dp"
+            android:layout_width="40dp"
+            android:scaleType="center"
+            android:layout_height="40dp"
 
-            android:layout_height="match_parent"
-            android:background="@android:drawable/ic_menu_revert"
+            android:src="@drawable/ic_arrow_back"
+            android:background="@drawable/barre_de_recherche"
             android:text="Back" />
 
         <EditText
@@ -35,29 +58,25 @@
             android:layout_gravity="center"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:background="@drawable/button_default"
-            android:shadowRadius="13"
-            android:textColorHint="#ffffff"
-            android:textColor="#ffffff"
-            android:shadowColor="#ffffff"
+            android:background="@drawable/barre_de_recherche"
+            android:hint="tap your adress here ..."
+            android:textSize="14dp"
             android:inputType="textPostalAddress"
-            android:hint="location" />
+            android:shadowColor="#ffffff"
+            android:shadowRadius="13"
+            android:textColor="#000000"
+            android:textColorHint="#7f8fa6" />
+
+
+        <ImageButton
+            android:id="@+id/search_restaurant_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_search"
+            android:background="@drawable/barre_de_recherche"
+            android:scaleType="fitXY"
+            android:tint="#ffe67e22" />
     </LinearLayout>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/relatif"
-    android:orientation="horizontal"
-    >
-    <ImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:src="@drawable/ic_gps"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="365dp"
-        android:id="@+id/gps_btn"
-        />
-</LinearLayout>
 
 
 </FrameLayout>
